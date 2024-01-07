@@ -365,7 +365,7 @@ a{
 
 /* main-content */
 .main-content {
-    flex: 0 0 47px;  
+    flex: 0 0 47%;  
 }
 
 .create-post {
@@ -719,12 +719,16 @@ a{
 
 .profile-description h2 {
     font-weight: 600;
-    margin: 10px 0 20px;
+    margin: 15px;
     color: #333;
 }
   
 .profile-description p {
+    margin: 15px;
+}
 
+.skills {
+    margin-left: 10px;
 }
 
 .profile-description .see-more {
@@ -732,6 +736,10 @@ a{
  text-align: right;
  font-size: 15px;
  color: #045be6;
+}
+
+.see-more {
+    margin-right: 15px;
 }
 
 .profile-des-row {
@@ -743,6 +751,7 @@ a{
 .profile-des-row img {
     width: 50px;
     margin-right: 20px;
+    margin-left: 10px;
     margin-top: 5px;
 }
 .profile-des-row div {
@@ -865,6 +874,10 @@ a{
     justify-content: flex-start;
 }
 
+#ShowMoreLink {
+    display: none;
+}
+
 
 /* media query */
 
@@ -889,15 +902,17 @@ a{
         width: 30px;
     }
     .container{
-        padding: 15px 3%;
+        /* padding: 15px 3%; */
     }
     .left-sidebar, .right-sidebar{
         position: relative;
         flex-basis: 100%;
         top: unset;
+        
     }
     .main-content {
-        flex: 0 0 100%;  
+        flex-basis: 100%;  
+        width: 70%;
     }
     .post-stats div {
         margin: 2px 0;
@@ -934,6 +949,17 @@ a{
     .sidebar-activity.open-activity {
         display: block;
     }
+
+    .post{
+        flex-basis: 100%;
+        padding: 10px 10px 5px;
+        margin: 10px 0 5px;
+    }
+    .nav-bar{
+        width: 97%;
+        margin-left: 10px;
+    }
+
 }
 
 
